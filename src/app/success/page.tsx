@@ -1,7 +1,13 @@
 import { motion } from 'framer-motion'
 import { CheckCircle } from 'lucide-react'
+import { useRouter } from 'next/router';
+import { GetServerSideProps } from 'next';
+import Stripe from 'stripe';
 
 const Success = () => {
+    const router = useRouter();
+    const { session_id } = router.query;
+
     return (
         <div className="min-h-screen w-full flex flex-col items-center justify-center bg-gray-50">
             <motion.div
@@ -45,9 +51,46 @@ const Success = () => {
                         Redirecionando para a página inicial em 5 segundos...
                     </p>
                 </motion.div>
+
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.8, duration: 0.5 }}
+                >
+                    <p>Session ID: {session_id}</p>
+                </motion.div>
             </motion.div>
         </div>
     )
 }
 
 export default Success
+
+
+export const getServerSideProps: GetServerSideProps = async (context) => {
+    const stripeSecret = process.env.STRIPE_SECRET_KEY!;
+    const stripe = new Stripe(stripeSecret, {
+        apiVersion: '2025-05-28.basil',
+    });
+    const sessionId = context.query.session_id;
+    if (typeof sessionId !== 'string') {
+        return {
+            notFound: true,
+        };
+    }
+    try {
+        const session = await stripe.checkout.sessions.retrieve(sessionId, {
+            expand: ['line_items.data.price.product'],
+        });
+        return {
+            props: {
+                stripeSession: session,
+            },
+        };
+    } catch (error) {
+        console.error(error);
+        return {
+            notFound: true,
+        };
+    }
+};
