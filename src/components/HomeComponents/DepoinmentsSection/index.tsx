@@ -1,12 +1,6 @@
-'use client'
-
 import Container from "@/components/Container";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
-import dynamic from 'next/dynamic';
-const Parallax = dynamic(() => import("react-parallax").then((mod) => mod.Parallax), {
-  ssr: false,
-});
+import { Parallax } from "react-parallax";
 
 const DepoinmentsSection = () => {
   return (
@@ -43,7 +37,7 @@ const DepoinmentsSection = () => {
 
 const DepoimentCard = () => {
   return (
-    <Link href="/">
+    <a href="/">
       <div className="col-span-1 w-full bg-white overflow-hidden">
         <div className="w-full aspect-video relative">
           <img
@@ -74,8 +68,8 @@ const DepoimentCard = () => {
             </div>
           </div>
           <p className="text-sm text-app-typography-tertiary/75 mb-4">
-            &quot;Foi um sonho realizado! Todo o planejamento e organização foram
-            perfeitos. Recomendo muito!&quot;
+            "Foi um sonho realizado! Todo o planejamento e organização foram
+            perfeitos. Recomendo muito!"
           </p>
           <div className="flex items-center gap-2 text-xs text-app-primary">
             <span>Ver depoimento completo</span>
@@ -96,7 +90,7 @@ const DepoimentCard = () => {
           </div>
         </div>
       </div>
-    </Link>
+    </a>
   );
 };
 

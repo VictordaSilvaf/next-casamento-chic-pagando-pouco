@@ -20,7 +20,7 @@ export default function TypewriterText({ text }) {
             } else {
                 clearInterval(interval);
             }
-        }, 60);
+        }, 50);
 
         return () => clearInterval(interval);
     }, [text]);

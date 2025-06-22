@@ -1,9 +1,4 @@
-'use client'
-
-import dynamic from 'next/dynamic';
-const Parallax = dynamic(() => import("react-parallax").then((mod) => mod.Parallax), {
-    ssr: false,
-});
+import { Parallax } from "react-parallax"
 
 const CTASection = () => {
     return (
