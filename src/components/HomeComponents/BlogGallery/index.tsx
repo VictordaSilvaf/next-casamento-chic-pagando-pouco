@@ -153,7 +153,7 @@ const posts = [
     categorySlug: "casamentos",
   },
   { id: 15, image: ImgAll15, title: "extra 3", categorySlug: "eventos" },
-  { id: 15, image: ImgAll16, title: "extra 4", categorySlug: "eventos" },
+  { id: 16, image: ImgAll16, title: "extra 4", categorySlug: "eventos" },
 ];
 
 const categories = [
@@ -219,11 +219,10 @@ const BlogGallery = () => {
                   disabled={selectedCategory.id === category.id}
                   onClick={() => handleCategoryClick(category)}
                   variant={"ghost"}
-                  className={`text-sm cursor-pointer ${
-                    selectedCategory.id === category.id
-                      ? "text-app-primary cursor-default"
-                      : "text-app-typography-tertiary/50 hover:text-app-typography-tertiary"
-                  }`}
+                  className={`text-sm cursor-pointer ${selectedCategory.id === category.id
+                    ? "text-app-primary cursor-default"
+                    : "text-app-typography-tertiary/50 hover:text-app-typography-tertiary"
+                    }`}
                 >
                   {category.name}
                 </Button>
@@ -307,8 +306,8 @@ const BlogGalleryItem = ({
           </div>
         </div>
       </DialogTrigger>
-      <DialogContent className="h-[500px] overflow-auto">
-        <DialogHeader>
+      <DialogContent className="h-[500px] overflow-auto bg-white text-app-typography-primary border-none rounded-xs">
+        <DialogHeader className="bg-white">
           <DialogTitle className="uppercase">{title}</DialogTitle>
 
           {id === 1 && (

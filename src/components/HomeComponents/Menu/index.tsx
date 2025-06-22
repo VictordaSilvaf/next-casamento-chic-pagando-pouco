@@ -87,8 +87,8 @@ const Menu = () => {
                     </NavigationMenuList>
                   </NavigationMenu>
 
-                  <Button onClick={() => setIsOpen(false)} className="mt-5">
-                    <a href="#contact">Eu vou casar</a>
+                  <Button onClick={() => setIsOpen(false)} className="mt-5 bg-app-primary">
+                    <a href="#plan">Eu vou casar</a>
                   </Button>
                 </SheetDescription>
               </SheetHeader>
@@ -129,8 +129,8 @@ const Menu = () => {
             </NavigationMenuList>
           </NavigationMenu>
 
-          <Button>
-            <a href="#contact">Eu vou casar</a>
+          <Button asChild className="bg-app-primary hover:bg-app-primary/50">
+            <a href="#plan">Eu vou casar</a>
           </Button>
         </div>
       </Container>

@@ -17,7 +17,7 @@ import Menu from "@/components/HomeComponents/Menu";
 
 export default function Home() {
   return (
-    <div className="w-full overflow-x-hidden relative">
+    <div className="w-full overflow-x-hidden relative bg-white">
       <Menu />
 
       <Banner />
@@ -55,7 +55,7 @@ export default function Home() {
       </div>
 
 
-      <Footer /> 
+      <Footer />
     </div>
   );
 }
