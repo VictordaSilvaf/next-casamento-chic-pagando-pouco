@@ -3,7 +3,7 @@ export const products = [
     id: 1,
     name: "E-Book",
     price: 3999,
-    stripeId: "price_1RcvjcC4fnTkzmVlRhFAE8Vo",
+    stripeId: "price_1RcrDHFtu65GZe6jy9WUe196",
     image: "/images/ebook.png",
     description:
       "E-book completo com estratégias comprovadas para alavancar seu negócio digital",
@@ -20,7 +20,7 @@ export const products = [
     id: 2,
     name: "Mentoria",
     price: 99999,
-    stripeId: "price_1RcvkBC4fnTkzmVlHeoArdI7",
+    stripeId: "price_1RcrECFtu65GZe6jHngo0yHT",
     image: "/images/mentoria.png",
     description:
       "Mentoria personalizada one-on-one para acelerar seus resultados com acompanhamento exclusivo",
@@ -38,7 +38,7 @@ export const products = [
     id: 3,
     name: "Curso Online",
     price: 19999,
-    stripeId: "price_1RcvjvC4fnTkzmVlGJ35Og4V",
+    stripeId: "price_1RcrFFFtu65GZe6jP44maBCL",
     image: "/images/curso.png",
     description:
       "Curso online completo com mais de 40 horas de conteúdo prático e certificado de conclusão",

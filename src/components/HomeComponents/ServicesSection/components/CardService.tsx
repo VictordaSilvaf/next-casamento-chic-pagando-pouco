@@ -1,5 +1,3 @@
-"use client";
-
 import { Button } from "@/components/ui/button";
 import type { CardServiceProps } from "@/types/types";
 import { CheckIcon } from "lucide-react";
@@ -7,22 +5,6 @@ import { loadStripe } from '@stripe/stripe-js';
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
 
 function CardService(product: Readonly<CardServiceProps>) {
-  const handleCheckout = async () => {
-    const stripe = await stripePromise;
-    const response = await fetch('/api/checkout-sessions/create', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        cartItems: [product],
-        returnUrl: window.location.origin,
-      }),
-    });
-    const { sessionId } = await response.json();
-    await stripe?.redirectToCheckout({ sessionId });
-  };
-
   return (
     <div
       key={product.id}
@@ -45,9 +27,15 @@ function CardService(product: Readonly<CardServiceProps>) {
           ))}
         </ul>
       </div>
-      <Button className="mt-3" onClick={handleCheckout}>
-        Comprar agora
-      </Button>
+      <form action={`/api/checkout_sessions?price_id=${product.stripeId}`} method="POST">
+        <section>
+          <Button className="mt-3" asChild>
+            <button type="submit" role="link">
+              Comprar agora
+            </button>
+          </Button>
+        </section>
+      </form>
     </div>
   );
 };

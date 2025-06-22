@@ -40,7 +40,7 @@ const Menu = () => {
                       <NavigationMenuItem>
                         <NavigationMenuLink
                           href="#home"
-                          className="font-medium"
+                          className="font-medium text-white"
                           onClick={() => setIsOpen(false)}
                         >
                           Home
@@ -49,7 +49,7 @@ const Menu = () => {
                       <NavigationMenuItem>
                         <NavigationMenuLink
                           href="#services"
-                          className="font-medium"
+                          className="font-medium text-white"
                           onClick={() => setIsOpen(false)}
                         >
                           Serviços
@@ -59,7 +59,7 @@ const Menu = () => {
                       <NavigationMenuItem>
                         <NavigationMenuLink
                           href="#depoiments"
-                          className="font-medium"
+                          className="font-medium text-white"
                           onClick={() => setIsOpen(false)}
                         >
                           Depoimentos
@@ -68,7 +68,7 @@ const Menu = () => {
                       <NavigationMenuItem>
                         <NavigationMenuLink
                           href="#plan"
-                          className="font-medium"
+                          className="font-medium text-white"
                           onClick={() => setIsOpen(false)}
                         >
                           Planos
@@ -78,7 +78,7 @@ const Menu = () => {
                       <NavigationMenuItem>
                         <NavigationMenuLink
                           href="#blog"
-                          className="font-medium"
+                          className="font-medium text-white"
                           onClick={() => setIsOpen(false)}
                         >
                           Blog

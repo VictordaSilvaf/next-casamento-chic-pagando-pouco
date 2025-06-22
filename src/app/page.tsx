@@ -3,7 +3,6 @@ import AchievementsSection from '@/components/HomeComponents/AchievementsSection
 import HeroSection from '@/components/HomeComponents/HeroSection'
 import Menu from '@/components/HomeComponents/Menu'
 import SlidderSection from '@/components/HomeComponents/SlidderSection'
-import ServicesSection from '@/components/HomeComponents/ServicesSection'
 import DepoinmentsSection from '@/components/HomeComponents/DepoinmentsSection'
 import PartnersSection from '@/components/HomeComponents/PartnersSection'
 import BlogGallery from '@/components/HomeComponents/BlogGallery'
@@ -12,6 +11,7 @@ import Footer from '@/components/HomeComponents/Footer'
 import TitleSection from '@/components/TitleSection'
 import DescriptionSection from '@/components/DescriptionSection'
 import PartnersLogo from '@/components/HomeComponents/PartnersLogo'
+import ServicesSection from '@/components/HomeComponents/ServicesSection'
 
 export default function Home() {
   return (
@@ -32,7 +32,6 @@ export default function Home() {
 
       {/* Sobre a grace, texto na laterla e imagem no lado oposto */}
       <AchievementsSection />
-
 
       <BlogGallery />
 
