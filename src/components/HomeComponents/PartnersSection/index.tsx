@@ -1,9 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import {
-  ParallaxProvider,
-  ParallaxBanner,
-} from "react-scroll-parallax";
+import { ParallaxProvider, ParallaxBanner } from "react-scroll-parallax";
 
 const PartnersSection = () => {
   return (
@@ -11,7 +8,6 @@ const PartnersSection = () => {
       <div className="relative w-full min-h-[50vh] overflow-hidden">
         {/* Imagem com Parallax */}
         <ParallaxBanner
-      
           layers={[
             {
               image:
