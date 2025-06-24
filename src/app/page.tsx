@@ -25,7 +25,6 @@ export default function Home() {
 
       <HeroSection />
 
-      <AboutSection />
 
       {/* <CTASection /> */}
 
@@ -47,6 +46,8 @@ export default function Home() {
 
       <PlansSection />
 
+      <AboutSection />
+
       <div className="min-h-[50vh] w-full bg-white">
         <div className="max-w-7xl mx-auto pb-10">
           <TitleSection title="Fale conosco" />
@@ -56,7 +57,6 @@ export default function Home() {
         </div>
         <PartnersSection />
       </div>
-
 
       <Footer />
     </div>
