@@ -61,8 +61,7 @@ const PlansSection = () => {
       <Container>
         <TitleSection title="OUR PLANS" />
         <DescriptionSection>
-          YOU CAN CONFIGURE YOUR PRICING TABLE USING THE GRID SYSTEM IN ORDER TO
-          MAKE IT RESPONSIVE FOR SMALL DEVICES.
+          Escolha o plano ideal para organizar seu casamento sem gastar muito. Compare os benefícios e encontre a opção perfeita para o seu evento!
         </DescriptionSection>
 
         <div className="isolate mx-auto mt-20 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3 ">

@@ -100,29 +100,29 @@ const Menu = () => {
           <NavigationMenu>
             <NavigationMenuList className="gap-x-5">
               <NavigationMenuItem>
-                <NavigationMenuLink href="#home" className="font-medium">
+                <NavigationMenuLink href="#home" className="font-medium text-app-tertiary/70">
                   Home
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuLink href="#services" className="font-medium">
+                <NavigationMenuLink href="#services" className="font-medium text-app-tertiary/70">
                   Serviços
                 </NavigationMenuLink>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <NavigationMenuLink href="#depoiments" className="font-medium">
+                <NavigationMenuLink href="#depoiments" className="font-medium text-app-tertiary/70">
                   Depoimentos
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuLink href="#plan" className="font-medium">
+                <NavigationMenuLink href="#plan" className="font-medium text-app-tertiary/70">
                   Planos
                 </NavigationMenuLink>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <NavigationMenuLink href="#blog" className="font-medium">
+                <NavigationMenuLink href="#blog" className="font-medium text-app-tertiary/70">
                   Blog
                 </NavigationMenuLink>
               </NavigationMenuItem>
