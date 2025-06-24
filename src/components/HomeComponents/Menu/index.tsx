@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Container from "@/components/Container";
 import { Button } from "@/components/ui/button";
@@ -20,7 +20,6 @@ import { MenuIcon } from "lucide-react";
 import { useState } from "react";
 
 const Menu = () => {
-
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
@@ -46,6 +45,17 @@ const Menu = () => {
                           Home
                         </NavigationMenuLink>
                       </NavigationMenuItem>
+
+                      <NavigationMenuItem>
+                        <NavigationMenuLink
+                          href="#about"
+                          className="font-medium"
+                          onClick={() => setIsOpen(false)}
+                        >
+                          Sobre
+                        </NavigationMenuLink>
+                      </NavigationMenuItem>
+
                       <NavigationMenuItem>
                         <NavigationMenuLink
                           href="#services"
@@ -87,7 +97,10 @@ const Menu = () => {
                     </NavigationMenuList>
                   </NavigationMenu>
 
-                  <Button onClick={() => setIsOpen(false)} className="mt-5 bg-app-primary">
+                  <Button
+                    onClick={() => setIsOpen(false)}
+                    className="mt-5 bg-app-primary"
+                  >
                     <a href="#plan">Eu vou casar</a>
                   </Button>
                 </SheetDescription>
@@ -102,6 +115,12 @@ const Menu = () => {
               <NavigationMenuItem>
                 <NavigationMenuLink href="#home" className="font-medium text-app-tertiary/70">
                   Home
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <NavigationMenuLink href="#about" className="font-medium">
+                  Sobre
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>

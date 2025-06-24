@@ -14,6 +14,7 @@ import DescriptionSection from "@/components/DescriptionSection";
 import PartnersLogo from "@/components/HomeComponents/PartnersLogo";
 import PlansSection from "@/components/HomeComponents/PlansSection";
 import Menu from "@/components/HomeComponents/Menu";
+import AboutSection from "@/components/HomeComponents/AboutSection";
 
 export default function Home() {
   return (
@@ -23,6 +24,8 @@ export default function Home() {
       <Banner />
 
       <HeroSection />
+
+      <AboutSection />
 
       {/* <CTASection /> */}
 
