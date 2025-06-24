@@ -219,10 +219,11 @@ const BlogGallery = () => {
                   disabled={selectedCategory.id === category.id}
                   onClick={() => handleCategoryClick(category)}
                   variant={"ghost"}
-                  className={`text-sm cursor-pointer ${selectedCategory.id === category.id
-                    ? "text-app-primary cursor-default"
-                    : "text-app-typography-tertiary/50 hover:text-app-typography-tertiary"
-                    }`}
+                  className={`text-sm cursor-pointer ${
+                    selectedCategory.id === category.id
+                      ? "text-app-primary cursor-default"
+                      : "text-app-typography-tertiary/50 hover:text-app-typography-tertiary"
+                  }`}
                 >
                   {category.name}
                 </Button>
@@ -369,8 +370,8 @@ const BlogGalleryItem = ({
           )}
 
           {id === 3 && (
-            <div className="mt-5">
-              <Carousel className="w-full max-w-sm mx-auto">
+            <div className="mt-5 flex items-start gap-10">
+              <Carousel className="w-1/2 relative overflow-hidden">
                 <CarouselContent>
                   <CarouselItem>
                     <div className="p-1">
@@ -412,11 +413,18 @@ const BlogGalleryItem = ({
                     </div>
                   </CarouselItem>
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
+
+                <CarouselPrevious
+                  style={{ border: "1px solid #fff" }}
+                  className="absolute cursor-pointer left-2 top-1/2 -translate-y-1/2 z-10"
+                />
+                <CarouselNext
+                  style={{ border: "1px solid #fff" }}
+                  className="absolute cursor-pointer right-2 top-1/2 -translate-y-1/2 z-10"
+                />
               </Carousel>
 
-              <div className="mt-3">
+              <div className="mt-3 w-1/2">
                 <p>
                   Celebre o Amor com Estilo e Sem Exceder o Orçamento Quando
                   pensamos em casamento, sabemos que os gastos podem alcançar
@@ -469,8 +477,8 @@ const BlogGalleryItem = ({
           )}
 
           {id === 4 && (
-            <div className="mt-5">
-              <Carousel className="w-full max-w-sm mx-auto">
+            <div className="mt-5 flex items-start gap-10">
+              <Carousel className="w-1/2 relative overflow-hidden">
                 <CarouselContent>
                   <CarouselItem>
                     <div className="p-1">
@@ -501,11 +509,17 @@ const BlogGalleryItem = ({
                     </div>
                   </CarouselItem>
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
+                <CarouselPrevious
+                  style={{ border: "1px solid #fff" }}
+                  className="absolute cursor-pointer left-2 top-1/2 -translate-y-1/2 z-10"
+                />
+                <CarouselNext
+                  style={{ border: "1px solid #fff" }}
+                  className="absolute cursor-pointer right-2 top-1/2 -translate-y-1/2 z-10"
+                />
               </Carousel>
 
-              <div className="mt-3">
+              <div className="mt-3 w-1/2">
                 <strong>A Inspiração da Princesa Beatriz do Reino Unido</strong>
                 <br />
                 A princesa Beatriz nos deu um exemplo de flexibilidade e
@@ -539,8 +553,8 @@ const BlogGalleryItem = ({
           )}
 
           {id === 5 && (
-            <div className="mt-5">
-              <Carousel className="w-full max-w-sm mx-auto">
+            <div className="mt-5 flex items-start gap-10">
+              <Carousel className="w-1/2 relative overflow-hidden">
                 <CarouselContent>
                   <CarouselItem>
                     <div className="p-1">
@@ -571,11 +585,17 @@ const BlogGalleryItem = ({
                     </div>
                   </CarouselItem>
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
+                <CarouselPrevious
+                  style={{ border: "1px solid #fff" }}
+                  className="absolute cursor-pointer left-2 top-1/2 -translate-y-1/2 z-10"
+                />
+                <CarouselNext
+                  style={{ border: "1px solid #fff" }}
+                  className="absolute cursor-pointer right-2 top-1/2 -translate-y-1/2 z-10"
+                />
               </Carousel>
 
-              <div className="mt-3">
+              <div className="mt-3 w-1/2">
                 <p>
                   Doces Finos Para garantir que todos os convidados aproveitem a
                   mesa de doces, calcule entre 4 e 6 doces finos por pessoa como
@@ -630,8 +650,8 @@ const BlogGalleryItem = ({
           )}
 
           {id === 6 && (
-            <div className="mt-5">
-              <Carousel className="w-full max-w-sm mx-auto">
+            <div className="mt-5 flex items-start gap-10">
+              <Carousel className="w-1/2 relative overflow-hidden">
                 <CarouselContent>
                   <CarouselItem>
                     <div className="p-1">
@@ -662,11 +682,17 @@ const BlogGalleryItem = ({
                     </div>
                   </CarouselItem>
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
+                <CarouselPrevious
+                  style={{ border: "1px solid #fff" }}
+                  className="absolute cursor-pointer left-2 top-1/2 -translate-y-1/2 z-10"
+                />
+                <CarouselNext
+                  style={{ border: "1px solid #fff" }}
+                  className="absolute cursor-pointer right-2 top-1/2 -translate-y-1/2 z-10"
+                />
               </Carousel>
 
-              <div className="mt-3">
+              <div className="mt-3 w-1/2">
                 Como Calcular a Quantidade de Bebidas para o Casamento A
                 quantidade de vinho ou espumante para um casamento depende do
                 perfil dos convidados e da variedade de outras bebidas
@@ -719,8 +745,8 @@ const BlogGalleryItem = ({
           )}
 
           {id === 7 && (
-            <div className="mt-5">
-              <Carousel className="w-full max-w-sm mx-auto">
+            <div className="mt-5 flex items-start gap-10">
+              <Carousel className="w-1/2 relative overflow-hidden">
                 <CarouselContent>
                   <CarouselItem>
                     <div className="p-1">
@@ -751,11 +777,17 @@ const BlogGalleryItem = ({
                     </div>
                   </CarouselItem>
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
+                <CarouselPrevious
+                  style={{ border: "1px solid #fff" }}
+                  className="absolute cursor-pointer left-2 top-1/2 -translate-y-1/2 z-10"
+                />
+                <CarouselNext
+                  style={{ border: "1px solid #fff" }}
+                  className="absolute cursor-pointer right-2 top-1/2 -translate-y-1/2 z-10"
+                />
               </Carousel>
 
-              <div className="mt-3">
+              <div className="mt-3 w-1/2">
                 <p>
                   A noiva é única e não precisa combinar com a decoração. Se o
                   ambiente tiver tons vibrantes, como vermelho ou laranja, o
@@ -776,8 +808,8 @@ const BlogGalleryItem = ({
           )}
 
           {id === 8 && (
-            <div className="mt-5">
-              <Carousel className="w-full max-w-sm mx-auto">
+            <div className="mt-5 flex items-start gap-10">
+              <Carousel className="w-1/2 relative overflow-hidden">
                 <CarouselContent>
                   <CarouselItem>
                     <div className="p-1">
@@ -808,11 +840,17 @@ const BlogGalleryItem = ({
                     </div>
                   </CarouselItem>
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
+                <CarouselPrevious
+                  style={{ border: "1px solid #fff" }}
+                  className="absolute cursor-pointer left-2 top-1/2 -translate-y-1/2 z-10"
+                />
+                <CarouselNext
+                  style={{ border: "1px solid #fff" }}
+                  className="absolute cursor-pointer right-2 top-1/2 -translate-y-1/2 z-10"
+                />
               </Carousel>
 
-              <div className="mt-3">
+              <div className="mt-3 w-1/2">
                 <p>
                   Como Escolher o Melhor Vestido
                   <br /> <br />
@@ -834,8 +872,8 @@ const BlogGalleryItem = ({
           )}
 
           {id === 9 && (
-            <div className="mt-5">
-              <Carousel className="w-full max-w-sm mx-auto">
+            <div className="mt-5 flex items-start gap-10">
+              <Carousel className="w-1/2 relative overflow-hidden">
                 <CarouselContent>
                   <CarouselItem>
                     <div className="p-1">
@@ -866,10 +904,16 @@ const BlogGalleryItem = ({
                     </div>
                   </CarouselItem>
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
+                <CarouselPrevious
+                  style={{ border: "1px solid #fff" }}
+                  className="absolute cursor-pointer left-2 top-1/2 -translate-y-1/2 z-10"
+                />
+                <CarouselNext
+                  style={{ border: "1px solid #fff" }}
+                  className="absolute cursor-pointer right-2 top-1/2 -translate-y-1/2 z-10"
+                />
               </Carousel>
-              <div className="mt-3">
+              <div className="mt-3 w-1/2">
                 <p>
                   Você Já Pensou no Penteado Para Subir ao Altar?
                   <br /> <br />
@@ -897,8 +941,8 @@ const BlogGalleryItem = ({
           )}
 
           {id === 10 && (
-            <div className="mt-5">
-              <Carousel className="w-full max-w-sm mx-auto">
+            <div className="mt-5 flex items-start gap-10">
+              <Carousel className="w-1/2 relative overflow-hidden">
                 <CarouselContent>
                   <CarouselItem>
                     <div className="p-1">
@@ -929,10 +973,16 @@ const BlogGalleryItem = ({
                     </div>
                   </CarouselItem>
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
+                <CarouselPrevious
+                  style={{ border: "1px solid #fff" }}
+                  className="absolute cursor-pointer left-2 top-1/2 -translate-y-1/2 z-10"
+                />
+                <CarouselNext
+                  style={{ border: "1px solid #fff" }}
+                  className="absolute cursor-pointer right-2 top-1/2 -translate-y-1/2 z-10"
+                />
               </Carousel>
-              <div className="mt-3">
+              <div className="mt-3 w-1/3">
                 <p>
                   Como Escolher o Melhor Vestido
                   <br />
@@ -957,8 +1007,8 @@ const BlogGalleryItem = ({
           )}
 
           {id === 11 && (
-            <div className="mt-5">
-              <Carousel className="w-full max-w-sm mx-auto">
+            <div className="mt-5 flex items-start gap-10">
+              <Carousel className="w-1/2 relative overflow-hidden">
                 <CarouselContent>
                   <CarouselItem>
                     <div className="p-1">
@@ -989,10 +1039,16 @@ const BlogGalleryItem = ({
                     </div>
                   </CarouselItem>
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
+                <CarouselPrevious
+                  style={{ border: "1px solid #fff" }}
+                  className="absolute cursor-pointer left-2 top-1/2 -translate-y-1/2 z-10"
+                />
+                <CarouselNext
+                  style={{ border: "1px solid #fff" }}
+                  className="absolute cursor-pointer right-2 top-1/2 -translate-y-1/2 z-10"
+                />
               </Carousel>
-              <div className="mt-3">
+              <div className="mt-3 w-1/2">
                 <p>
                   Madrinhas: O Dia Mais Especial da Sua Vida, Com as Suas Amigas
                   <br />
@@ -1012,8 +1068,8 @@ const BlogGalleryItem = ({
           )}
 
           {id === 12 && (
-            <div className="mt-5">
-              <Carousel className="w-full max-w-sm mx-auto">
+            <div className="mt-5 flex items-start gap-10">
+              <Carousel className="w-1/2 relative overflow-hidden">
                 <CarouselContent>
                   <CarouselItem>
                     <div className="p-1">
@@ -1044,11 +1100,17 @@ const BlogGalleryItem = ({
                     </div>
                   </CarouselItem>
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
+                <CarouselPrevious
+                  style={{ border: "1px solid #fff" }}
+                  className="absolute cursor-pointer left-2 top-1/2 -translate-y-1/2 z-10"
+                />
+                <CarouselNext
+                  style={{ border: "1px solid #fff" }}
+                  className="absolute cursor-pointer right-2 top-1/2 -translate-y-1/2 z-10"
+                />
               </Carousel>
 
-              <div className="mt-3">
+              <div className="mt-3 w-1/2">
                 <p>
                   Quando pensamos em uma mesa posta, a ideia de requinte e
                   sofisticação logo vem à mente. No entanto, é importante
