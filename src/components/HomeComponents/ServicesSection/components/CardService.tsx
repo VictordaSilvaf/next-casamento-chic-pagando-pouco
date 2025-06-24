@@ -1,29 +1,39 @@
-import Subtitle from "@/components/Subtitle";
-import type { FC, ReactNode } from "react";
+import { Button } from "@/components/ui/button";
+import type { CardServiceProps } from "@/types/types";
+import { CheckIcon } from "lucide-react";
 
-interface CardServiceProps {
-  title: string;
-  description: string;
-  children: ReactNode;
-}
-
-const CardService: FC<CardServiceProps> = ({
-  title,
-  description,
-  children,
-}) => {
+function CardService(product: Readonly<CardServiceProps>) {
   return (
-    <div className="p-6 bg-gray-100 rounded-md">
-      <div className="size-24 mx-auto rounded-full bg-white flex items-center justify-center">
-        {children}
+    <div
+      key={product.id}
+      className="flex flex-col justify-between rounded-3xl bg-white p-8 shadow-xl ring-1 ring-gray-900/10 sm:p-10"
+    >
+      <div>
+        <h3 id={product.id.toString()} className="text-base/7 font-semibold text-app-primary">
+          {product.name}
+        </h3>
+        <div className="mt-4 flex items-baseline gap-x-2">
+          <span className="text-5xl font-semibold tracking-tight text-gray-900">R$ {(product.price / 100).toFixed(2).replace('.', ',')}</span>
+        </div>
+        <p className="mt-6 text-base/7 text-gray-600">{product.description}</p>
+        <ul role="list" className="mt-10 space-y-4 text-sm/6 text-gray-600">
+          {product.features.map((feature) => (
+            <li key={feature} className="flex gap-x-3">
+              <CheckIcon aria-hidden="true" className="h-6 w-5 flex-none text-app-primary" />
+              {feature}
+            </li>
+          ))}
+        </ul>
       </div>
-
-      <div className="mt-5">
-        <Subtitle className="text-center" text={title} />
-        <p className="text-center mt-5 text-app-typography-tertiary text-[15px]">
-          {description}
-        </p>
-      </div>
+      <form action={`/api/checkout_sessions?price_id=${product.stripeId}`} method="POST">
+        <section>
+          <Button className="mt-3 bg-app-primary hover:bg-app-primary/75 cursor-pointer" asChild>
+            <button type="submit" role="link">
+              Comprar agora
+            </button>
+          </Button>
+        </section>
+      </form>
     </div>
   );
 };
