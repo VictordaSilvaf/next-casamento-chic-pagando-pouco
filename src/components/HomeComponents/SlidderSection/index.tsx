@@ -6,6 +6,7 @@ import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import { useCallback } from 'react'
 import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 const slides = [
     {
@@ -70,28 +71,25 @@ const SlidderSection = () => {
                 data-aos="fade-left"
                 className="flex flex-col bg-gray-100 col-span-6 px-11 py-10 justify-between"
             >
-                <div className="">
-                    <Subtitle className="mb-[25px]" text="CASAMENTOS ÚNICOS" />
-                    <Text
-                        className="w-full max-w-2xl"
-                        text="Criamos experiências únicas e memoráveis para o seu dia especial. Nossa equipe está comprometida em tornar seu casamento exatamente como você sempre sonhou."
-                    />
-                </div>
 
-                <div className="">
-                    <Subtitle className="mb-[25px]" text="PLANEJAMENTO COMPLETO" />
-                    <Text
-                        className="w-full max-w-2xl"
-                        text="Do início ao fim, cuidamos de cada detalhe do seu casamento. Desde a escolha do local até a decoração, música e buffet, tudo é personalizado de acordo com seu estilo."
-                    />
-                </div>
+                <div className="flex flex-col gap-y-6 text-black text-start justify-between">
+                    <p>
+                        Eu te ensino a organizar um <span className="font-semibold">casamento chic</span> — o <span className="font-semibold text-app-primary">casamento dos seus sonhos</span> — gastando até <span className="text-app-primary font-semibold">50% menos</span>. Basta clicar no botão <span className="font-semibold text-app-primary">“Eu vou casar”</span>, aqui embaixo, e vamos juntas planejar o <span className="font-semibold">casamento mais incrível</span> que você já viu na vida.
+                    </p>
 
-                <div className="">
-                    <Subtitle className="mb-[25px]" text="MOMENTOS INESQUECÍVEIS" />
-                    <Text
-                        className="w-full max-w-2xl"
-                        text="Nosso objetivo é criar momentos mágicos que ficarão guardados para sempre na memória. Cada casamento é único e merece uma celebração especial."
-                    />
+                    <p>
+                        A verdade é uma só: se você vai <span className="font-semibold">casar</span> (ou pretende <span className="font-semibold">casar</span> um dia), se é <span className="font-semibold">mãe</span>, <span className="font-semibold">madrinha</span>, <span className="font-semibold">amiga</span> ou aquela mulher que ama estar preparada para ajudar… Você simplesmente <span className="text-app-primary font-semibold">NÃO PODE</span> ignorar isso. Porque, deixa eu te contar, <span className="font-semibold">casamento sem organização</span>, sem <span className="font-semibold">estratégia</span> e sem <span className="font-semibold">clareza</span> é sinônimo de quê? <span className="font-semibold">Caos</span>. <span className="font-semibold">Ansiedade</span>. <span className="font-semibold">Desespero</span>. <span className="font-semibold">Escolhas erradas</span>. <span className="font-semibold">Desperdício</span>. E, muitas vezes, <span className="font-semibold">frustração</span>. E aqui, a gente não aceita nada menos do que um dia absolutamente <span className="font-semibold">incrível</span>, <span className="font-semibold">leve</span>, <span className="font-semibold">inteligente</span> e — claro — <span className="font-semibold">chiquíssimo</span>.
+                    </p>
+
+                    <p>
+                        É exatamente por isso que nasceu o <span className="text-app-primary font-semibold">Casamento Chic Pagando Pouco</span> — um <span className="font-semibold">guia prático</span>, <span className="font-semibold">elegante</span> e <span className="font-semibold">super objetivo</span>, feito pra <span className="font-semibold">destravar sua organização</span>, te ensinar a fazer <span className="font-semibold">escolhas inteligentes</span>, <span className="font-semibold">otimizar seus recursos</span> e viver o seu <span className="font-semibold">sonho</span> sem <span className="font-semibold">estresse</span>, sem <span className="font-semibold">desperdícios</span> e sem aquele <span className="font-semibold">drama todo</span> que você vê por aí.
+                    </p>
+
+                    <div className="flex w-full justify-center">
+                        <Button className="mt-8 bg-app-primary hover:bg-app-primary/80 font-semibold uppercase font-sifonn animate-bounce" size="3xl">
+                            Eu quero meu casamento chic
+                        </Button>
+                    </div>
                 </div>
             </div>
         </div>

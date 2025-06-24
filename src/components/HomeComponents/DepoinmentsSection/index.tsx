@@ -59,15 +59,15 @@ const DepoimentCard = () => {
               className="w-10 h-10 rounded-full"
             />
             <div>
-              <h3 className="font-semibold text-app-typography-tertiary">
+              <h3 className="font-semibold text-black">
                 Maria e João
               </h3>
-              <span className="text-xs text-app-typography-tertiary/75">
+              <span className="text-xs text-black">
                 Casamento em Setembro/2023
               </span>
             </div>
           </div>
-          <p className="text-sm text-app-typography-tertiary/75 mb-4">
+          <p className="text-sm text-black mb-4">
             "Foi um sonho realizado! Todo o planejamento e organização foram
             perfeitos. Recomendo muito!"
           </p>

@@ -25,8 +25,11 @@ export default function Home() {
 
       <HeroSection />
 
+      {/* Fotos de decoracao */}
+      <SlidderSection />
 
       {/* <CTASection /> */}
+      <AchievementsSection />
 
       {/* Colocar todos os detalhes nessa seção */}
       <ServicesSection />
@@ -35,16 +38,12 @@ export default function Home() {
       {/* <DepoinmentsSection /> */}
 
       {/* Sobre a grace, texto na laterla e imagem no lado oposto */}
-      <AchievementsSection />
 
       <BlogGallery />
 
       <PartnersLogo />
 
-      {/* Fotos de decoracao */}
-      <SlidderSection />
-
-      <PlansSection />
+      {/* <PlansSection /> */}
 
       <AboutSection />
 

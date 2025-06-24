@@ -7,14 +7,14 @@ export default function AboutSection() {
       id="about"
       className="max-w-7xl mx-auto flex flex-col items-center py-20 justify-center gap-2"
     >
-      <TitleSection title="Sobre Grace G. Natividade" />
+      <TitleSection title="Grace G. Natividade" />
 
       <Container>
         <div className="grid grid-cols-2 gap-4 items-start">
           <div className="h-full w-full bg-neutral-400 rounded overflow-hidden">
             <img src="/imagens/about/grace1.jpg" className="object-cover object-center h-full w-full" alt="Grace G. Natividade" />
           </div>
-          <div className="flex flex-col  gap-5 text-[#404040]/80 text-md text-justify">
+          <div className="flex flex-col  gap-5 text-black text-md text-justify">
             <p>
               <span className="text-5xl">N</span>a certidão, Grace Natividade. No coração, Grace G. Natividade —
               onde esse “G” carrega muito mais do que uma letra: é uma homenagem
@@ -34,7 +34,7 @@ export default function AboutSection() {
           </div>
         </div>
         <div className="grid grid-cols-2 gap-4 items-center">
-          <div className="flex flex-col  gap-5 text-[#404040]/80 text-justify">
+          <div className="flex flex-col  gap-5 text-black text-justify">
             <p>
               De poucos e bons amigos, daquelas que escolhem qualidade em tudo:
               nas relações, no trabalho, nos projetos e, claro, nos detalhes.
@@ -57,7 +57,7 @@ export default function AboutSection() {
             <img src="/imagens/about/grace2.jpg" className="object-cover object-center h-full w-full" alt="Grace G. Natividade" />
           </div>
         </div>
-        <div className="flex flex-col  gap-5 text-[#404040]/80 mt-6 text-justify">
+        <div className="flex flex-col  gap-5 text-black mt-6 text-justify">
           <p>
             A carreira de Grace G. Natividade não começou por acaso — começou
             com propósito. Teve um divisor de águas quando trabalhou ao lado do

@@ -75,7 +75,7 @@ const Menu = () => {
                           Depoimentos
                         </NavigationMenuLink>
                       </NavigationMenuItem>
-                      <NavigationMenuItem>
+                      {/* <NavigationMenuItem>
                         <NavigationMenuLink
                           href="#plan"
                           className="font-medium"
@@ -83,7 +83,7 @@ const Menu = () => {
                         >
                           Planos
                         </NavigationMenuLink>
-                      </NavigationMenuItem>
+                      </NavigationMenuItem> */}
 
                       <NavigationMenuItem>
                         <NavigationMenuLink
@@ -149,7 +149,7 @@ const Menu = () => {
           </NavigationMenu>
 
           <Button asChild className="bg-app-primary hover:bg-app-primary/50">
-            <a href="#plan">Eu vou casar</a>
+            <a href="#plan">Eu quero meu casamento chic</a>
           </Button>
         </div>
       </Container>

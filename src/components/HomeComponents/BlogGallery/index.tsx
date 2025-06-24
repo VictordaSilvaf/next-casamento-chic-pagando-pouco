@@ -204,7 +204,7 @@ const BlogGallery = () => {
       <Container>
         <div className="w-full sm:w-5xl mx-auto">
           <TitleSection title="Blog Gallery" />
-          <p className="text-app-typography-tertiary/75 text-center mt-4">
+          <p className="text-black text-center mt-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
             natus nemo quis nostrum cum harum optio sit unde, animi rerum
             deleniti consequuntur excepturi placeat voluptatum a maiores eius
@@ -219,11 +219,10 @@ const BlogGallery = () => {
                   disabled={selectedCategory.id === category.id}
                   onClick={() => handleCategoryClick(category)}
                   variant={"ghost"}
-                  className={`text-sm cursor-pointer ${
-                    selectedCategory.id === category.id
-                      ? "text-app-primary cursor-default"
-                      : "text-app-typography-tertiary/50 hover:text-app-typography-tertiary"
-                  }`}
+                  className={`text-sm cursor-pointer ${selectedCategory.id === category.id
+                    ? "text-app-primary cursor-default"
+                    : "text-app-typography-tertiary/50 hover:text-app-typography-tertiary"
+                    }`}
                 >
                   {category.name}
                 </Button>
@@ -307,7 +306,7 @@ const BlogGalleryItem = ({
           </div>
         </div>
       </DialogTrigger>
-      <DialogContent className="h-[500px] overflow-auto bg-white text-app-typography-primary border-none rounded-xs">
+      <DialogContent className="h-[500px] overflow-auto bg-white text-black border-none rounded-xs">
         <DialogHeader className="bg-white">
           <DialogTitle className="uppercase">{title}</DialogTitle>
 

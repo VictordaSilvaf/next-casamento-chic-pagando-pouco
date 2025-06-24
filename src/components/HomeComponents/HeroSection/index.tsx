@@ -1,82 +1,75 @@
-import CardHero from "@/components/HomeComponents/HeroSection/components/CardHero";
-import Container from "@/components/Container";
-import DescriptionSection from "@/components/DescriptionSection";
 import TitleSection from "@/components/TitleSection";
-import { ChartNoAxesColumnIncreasing, Paperclip } from "lucide-react";
+import Subtitle from "@/components/Subtitle";
 
 const HeroSection = () => {
   return (
     <div className="">
       <div className="max-w-7xl mx-auto flex flex-col items-center py-20 justify-center gap-2">
-        <TitleSection title="CASAMENTO CHIC PAGANDO POUCO?" />
-        <Container>
-          <DescriptionSection>
-            Te ensino a organizar um casamento chic, o casamento dos seus
-            sonhos, gastando até 50% menos. Clique no botão “Eu vou casar”, que
-            está abaixo e vamos juntas fazer o casamento mais incrível que você
-            já viu.
-          </DescriptionSection>
-        </Container>
+        <TitleSection title="CASAMENTO CHIC PAGANDO POUCO" />
+
+
+        <div className="relative w-full mt-20">
+          <div className="flex justify-center items-center flex-col lg:flex-row gap-8 md:gap-12 lg:gap-16 w-full">
+            {[
+              {
+                title: "CASAMENTOS *ÚNICOS*",
+                description:
+                  "Transformamos sonhos em realidade com nossa experiência em planejamento de casamentos únicos e memoráveis.",
+              },
+              {
+                title: "PLANEJAMENTO *COMPLETO*",
+                description:
+                  "Do início ao fim, cuidamos de cada detalhe do seu casamento. Desde a escolha do local até a decoração, música e buffet, tudo é personalizado de acordo com seu estilo.",
+              },
+              {
+                title: "MOMENTOS *INESQUECÍVEIS*",
+                description:
+                  "Nosso objetivo é criar momentos mágicos que ficarão guardados para sempre na memória. Cada casamento é único e merece uma celebração especial.",
+              },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="w-[20rem] xl:w-[23rem] h-[20rem] xl:h-[23rem] px-[2%] aspect-square border border-app-primary rounded-full bg-white z-[1] flex justify-center flex-col items-center text-center"
+              >
+                <Subtitle className="mb-[25px]" text={item.title} />
+                <p className="text-sm md:text-base text-black">{item.description}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Linha no meio - visível apenas no desktop */}
+          <div className="hidden lg:block absolute w-2/3 left-1/2 -translate-x-1/2 h-[2px] bg-app-primary top-1/2 -translate-y-1/2"></div>
+          <div className="block lg:hidden absolute h-2/3 top-1/2 -translate-x-1/2 w-[2px] bg-app-primary left-1/2 -translate-y-1/2"></div>
+        </div>
+
+
+        {/* <div className="">
+                    <Subtitle className="mb-[25px]" text="CASAMENTOS ÚNICOS" />
+                    <Text
+                        className="w-full max-w-2xl"
+                        text="Criamos experiências únicas e memoráveis para o seu dia especial. Nossa equipe está comprometida em tornar seu casamento exatamente como você sempre sonhou."
+                    />
+                </div>
+
+                <div className="">
+                    <Subtitle className="mb-[25px]" text="PLANEJAMENTO COMPLETO" />
+                    <Text
+                        className="w-full max-w-2xl"
+                        text="Do início ao fim, cuidamos de cada detalhe do seu casamento. Desde a escolha do local até a decoração, música e buffet, tudo é personalizado de acordo com seu estilo."
+                    />
+                </div>
+
+                <div className="">
+                    <Subtitle className="mb-[25px]" text="MOMENTOS INESQUECÍVEIS" />
+                    <Text
+                        className="w-full max-w-2xl"
+                        text="Nosso objetivo é criar momentos mágicos que ficarão guardados para sempre na memória. Cada casamento é único e merece uma celebração especial."
+                    />
+                </div> */}
+
       </div>
 
-      <Container>
-        <div className="flex flex-col text-[#404040]/80 gap-5">
-          <p>
-            <strong>A verdade é uma só:</strong>
-          </p>
-          <p>Se você vai casar (ou pretende casar um dia)…</p>
-          <p>
-            Se você é mãe, madrinha, amiga ou aquela mulher que gosta de estar
-            preparada para ajudar…
-          </p>
-          <p>Você simplesmente NÃO PODE ficar sem isso.</p>
-          <p>
-            Porque deixa eu te contar: casamento sem organização, sem estratégia
-            e sem clareza, é sinônimo de quê?
-          </p>
-          <p>
-            Caos. Ansiedade. Desespero. Escolhas erradas. Desperdício. E, muitas
-            vezes, frustração.
-          </p>
-          <p>
-            E aqui, a gente não aceita menos do que um dia absolutamente
-            incrível, leve, inteligente e… claro, chiquérrimo.
-          </p>
-          <p>
-            Por isso, nasceu o <strong>CASAMENTO CHIC PAGANDO POUCO —</strong>
-          </p>
-          <p>
-      
-            Um guia prático, elegante, sofisticado e super objetivo para
-            destravar sua organização, te ensinar como fazer escolhas
-            inteligentes, otimizar seus recursos e viver o seu sonho sem
-            estresse, sem desperdício e sem aquele drama todo que você vê por
-            aí.
-          </p>
-        </div>
-        {/* <div className="flex items-center flex-col sm:flex-row justify-center mt-12 gap-10 sm:gap-0 mb-20">
-          <CardHero
-            title="PLANEJAMENTO"
-            description="Ajudamos você a planejar cada detalhe do seu casamento, desde a escolha do local até os mínimos detalhes da decoração."
-          >
-            <Paperclip className="text-app-primary size-5" />
-          </CardHero>
 
-          <CardHero
-            title="ECONOMIA"
-            description="Estratégias inteligentes para reduzir custos sem comprometer a qualidade e elegância do seu grande dia."
-          >
-            <ChartNoAxesColumnIncreasing className="text-app-primary size-5" />
-          </CardHero>
-
-          <CardHero
-            title="ASSESSORIA"
-            description="Suporte completo com fornecedores, negociações e organização para realizar o casamento dos seus sonhos."
-          >
-            <Paperclip className="text-app-primary size-5" />
-          </CardHero>
-        </div> */}
-      </Container>
     </div>
 
     // <div>HeroSection</div>

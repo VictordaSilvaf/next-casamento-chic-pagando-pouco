@@ -14,32 +14,32 @@ const slides = [
     {
         id: 1,
         title: 'Eternizando momentos especiais com amor',
-        image: 'https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070&auto=format&fit=crop'
+        image: '/imagens/banner/banner1.webp'
     },
     {
         id: 2,
         title: 'Celebrando o amor e a união',
-        image: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=2069&auto=format&fit=crop'
+        image: '/imagens/banner/banner2.jpeg'
     },
     {
         id: 3,
         title: 'O dia mais feliz das suas vidas',
-        image: 'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&w=2070&auto=format&fit=crop'
+        image: '/imagens/banner/banner3.jpg'
     },
     {
         id: 4,
         title: 'Histórias de amor merecem ser contadas',
-        image: 'https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&w=2070&auto=format&fit=crop'
+        image: '/imagens/banner/banner4.jpg'
     },
     {
         id: 5,
         title: 'Momentos únicos, memórias eternas',
-        image: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=1974&auto=format&fit=crop'
+        image: '/imagens/banner/banner5.jpg'
     },
     {
         id: 6,
         title: 'Seu casamento dos sonhos realizado',
-        image: 'https://images.unsplash.com/photo-1460978812857-470ed1c77af0?q=80&w=2070&auto=format&fit=crop'
+        image: '/imagens/banner/banner6.jpg'
     }
 ]
 
@@ -84,14 +84,14 @@ const Banner = () => {
                 <div className="embla__container flex w-full h-full">
                     {slides.map((slide) => (
                         <div className="embla__slide flex-[0_0_100%] min-w-0 w-full h-full" key={slide.id}>
-                            <img src={slide.image} alt={slide.title} className="w-full h-full object-cover" />
+                            <img src={slide.image} alt={slide.title} className="w-full h-full object-cover object-top" />
                         </div>
                     ))}
                 </div>
             </div>
 
             <div className="absolute top-0 left-0 w-full h-full">
-                <div className="w-full h-full bg-black/50"></div>
+                <div className="w-full h-full bg-black/30"></div>
             </div>
 
             <div className="absolute -bottom-8 left-0 max-w-[600px] w-full h-[350px] z-10 overflow-hidden">

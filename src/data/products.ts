@@ -52,4 +52,39 @@ export const products = [
       "Marketing automations",
     ],
   },
+  {
+    id: 1,
+    name: "E-Book",
+    price: 3999,
+    stripeId: "price_1RcvjcC4fnTkzmVlRhFAE8Vo",
+    image: "/images/ebook.png",
+    description:
+      "E-book completo com estratégias comprovadas para alavancar seu negócio digital",
+    category: "ebook",
+    isMembership: false,
+    features: [
+      "5 products",
+      "Up to 1,000 subscribers",
+      "Basic analytics",
+      "48-hour support response time",
+    ],
+  },
+  {
+    id: 2,
+    name: "Mentoria",
+    price: 99999,
+    stripeId: "price_1RcvkBC4fnTkzmVlHeoArdI7",
+    image: "/images/mentoria.png",
+    description:
+      "Mentoria personalizada one-on-one para acelerar seus resultados com acompanhamento exclusivo",
+    category: "mentoria",
+    isMembership: true,
+    features: [
+      "Unlimited products",
+      "Unlimited subscribers",
+      "Advanced analytics",
+      "1-hour, dedicated support response time",
+      "Marketing automations",
+    ],
+  },
 ];
