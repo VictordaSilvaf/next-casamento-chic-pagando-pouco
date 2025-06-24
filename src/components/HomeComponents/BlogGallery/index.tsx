@@ -324,13 +324,14 @@ const BlogGalleryItem = ({
           )}
 
           {id === 2 && (
-            <div className="mt-5">
+            <div className="mt-5 flex items-start gap-10">
               <video
                 src="/videos/videocasamentocristao.mp4"
                 typeof="video/mp4"
+                className="w-1/2 relative overflow-hidden"
               ></video>
 
-              <div className="mt-3 flex flex-wrap gap-3">
+              <div className="mt-3 flex flex-wrap gap-3 w-1/2">
                 <p className="text-sm">
                   No dia 30 de julho de 2024, Luigi Cesar, filho do jornalista e
                   apresentador César Filho e da atriz Elaine Mickely, uniu-se em
