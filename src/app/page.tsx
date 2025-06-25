@@ -4,15 +4,15 @@ import HeroSection from "@/components/HomeComponents/HeroSection";
 // import Menu from "@/components/HomeComponents/Menu";
 import SlidderSection from "@/components/HomeComponents/SlidderSection";
 import ServicesSection from "@/components/HomeComponents/ServicesSection";
-import DepoinmentsSection from "@/components/HomeComponents/DepoinmentsSection";
+// import DepoinmentsSection from "@/components/HomeComponents/DepoinmentsSection";
 import PartnersSection from "@/components/HomeComponents/PartnersSection";
 import BlogGallery from "@/components/HomeComponents/BlogGallery";
-import CTASection from "@/components/HomeComponents/CTASection";
+// import CTASection from "@/components/HomeComponents/CTASection";
 import Footer from "@/components/HomeComponents/Footer";
 import TitleSection from "@/components/TitleSection";
 import DescriptionSection from "@/components/DescriptionSection";
 import PartnersLogo from "@/components/HomeComponents/PartnersLogo";
-import PlansSection from "@/components/HomeComponents/PlansSection";
+// import PlansSection from "@/components/HomeComponents/PlansSection";
 import Menu from "@/components/HomeComponents/Menu";
 import AboutSection from "@/components/HomeComponents/AboutSection";
 

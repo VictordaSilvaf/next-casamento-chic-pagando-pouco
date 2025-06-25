@@ -13,6 +13,7 @@ import {
   faTwitter,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
+import Image from "next/image";
 
 interface CardTeamProps {
   imgSrc: string;
@@ -24,11 +25,12 @@ const CardTeam: FC<CardTeamProps> = ({ imgSrc, title, job }) => {
   return (
     <div className="col-span-2 bg-gray-100">
       <div className="h-[220px] ">
-        <img
+        <Image
           className="w-full shadow-lg h-full object-cover"
           src={imgSrc}
           alt="img-team"
         />
+    
       </div>
 
       <div className="mt-5">

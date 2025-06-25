@@ -1,4 +1,4 @@
-import { motion } from "motion/react"
+
 import { CheckCircle } from 'lucide-react'
 import { redirect } from 'next/navigation'
 import { stripe } from '@/lib/stripe';
@@ -11,7 +11,6 @@ export default async function SuccessPage({ searchParams }: { readonly searchPar
 
     const {
         status,
-        customer_details: { email: customerEmail }
     } = await stripe.checkout.sessions.retrieve(session_id, {
         expand: ['line_items', 'payment_intent']
     })

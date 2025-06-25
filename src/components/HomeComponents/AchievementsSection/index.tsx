@@ -8,7 +8,7 @@ const AchievementsSection = () => {
     <Container>
       <TitleSection title="The team" />
       <DescriptionSection>
-        WE'RE A SMALL, FRIENDLY AND TALENTED TEAM. WE CRAFT BEAUTIFUL DIGITAL
+        WE&apos;RE A SMALL, FRIENDLY AND TALENTED TEAM. WE CRAFT BEAUTIFUL DIGITAL
         SOLUTIONS FOR AWESOME CLIENTS ACROSS ALL THE PLATFORMS.
       </DescriptionSection>
 
