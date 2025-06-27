@@ -1,6 +1,9 @@
 import Container from "@/components/Container";
 import TitleSection from "@/components/TitleSection";
 import Image from "next/image";
+import ImageGrace1 from '../../../../public/imagens/about/grace1.jpg'
+import ImageGrace2 from '../../../../public/imagens/about/grace2.jpg'
+
 
 export default function AboutSection() {
   return (
@@ -14,9 +17,10 @@ export default function AboutSection() {
         <div className="grid grid-cols-2 gap-4 items-start">
           <div className="h-full w-full bg-neutral-400 rounded overflow-hidden">
             <Image
-              src="/imagens/about/grace1.jpg"
+              src={ImageGrace1}
               className="object-cover object-center h-full w-full"
               alt="Grace G. Natividade"
+              width={100}
             />
           </div>
           <div className="flex flex-col  gap-5 text-black text-md text-justify">
@@ -62,9 +66,10 @@ export default function AboutSection() {
           </div>
           <div className="h-full w-full bg-neutral-400 rounded overflow-hidden">
             <Image
-              src="/imagens/about/grace2.jpg"
+              src={ImageGrace2}
               className="object-cover object-center h-full w-full"
               alt="Grace G. Natividade"
+                width={100}
             />
           </div>
         </div>

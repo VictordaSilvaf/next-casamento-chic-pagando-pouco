@@ -58,6 +58,7 @@ const SlidderSection = () => {
                   className="object-cover w-full h-[450px]"
                   src={slide.image}
                   alt={slide.title}
+                  fill
                 />
               </div>
             ))}

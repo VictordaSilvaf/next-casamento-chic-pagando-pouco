@@ -29,6 +29,7 @@ const CardTeam: FC<CardTeamProps> = ({ imgSrc, title, job }) => {
           className="w-full shadow-lg h-full object-cover"
           src={imgSrc}
           alt="img-team"
+          fill
         />
       </div>
 

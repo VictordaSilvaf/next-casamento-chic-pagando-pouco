@@ -15,10 +15,12 @@ import PartnersLogo from "@/components/HomeComponents/PartnersLogo";
 // import PlansSection from "@/components/HomeComponents/PlansSection";
 import Menu from "@/components/HomeComponents/Menu";
 import AboutSection from "@/components/HomeComponents/AboutSection";
+import { Toaster } from 'react-hot-toast'
 
 export default function Home() {
   return (
     <div className="w-full overflow-x-hidden relative bg-white">
+      <Toaster position="top-center" reverseOrder={false} />
       <Menu />
 
       <Banner />

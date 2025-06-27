@@ -53,7 +53,7 @@ export const products = [
     ],
   },
   {
-    id: 1,
+    id: 4,
     name: "E-Book",
     price: 3999,
     stripeId: "price_1RcvjcC4fnTkzmVlRhFAE8Vo",
@@ -70,7 +70,7 @@ export const products = [
     ],
   },
   {
-    id: 2,
+    id: 5,
     name: "Mentoria",
     price: 99999,
     stripeId: "price_1RcvkBC4fnTkzmVlHeoArdI7",

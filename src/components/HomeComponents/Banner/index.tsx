@@ -19,37 +19,45 @@ import { useEffect, useState, useCallback } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import TypewriterText from "@/components/typewriterText";
 import Image from "next/image";
+import ImgBanner1 from '../../../../public/imagens/banner/banner1.webp'
+import ImgBanner2 from '../../../../public/imagens/banner/banner2.jpeg'
+import ImgBanner3 from '../../../../public/imagens/banner/banner3.jpg'
+import ImgBanner4 from '../../../../public/imagens/banner/banner4.jpg'
+import ImgBanner5 from '../../../../public/imagens/banner/banner5.jpg'
+import ImgBanner6 from '../../../../public/imagens/banner/banner6.jpg'
+
+
 
 const slides = [
   {
     id: 1,
     title: "Eternizando momentos especiais com amor",
-    image: "/imagens/banner/banner1.webp",
+    image: ImgBanner1,
   },
   {
     id: 2,
     title: "Celebrando o amor e a união",
-    image: "/imagens/banner/banner2.jpeg",
+    image: ImgBanner2,
   },
   {
     id: 3,
     title: "O dia mais feliz das suas vidas",
-    image: "/imagens/banner/banner3.jpg",
+    image: ImgBanner3,
   },
   {
     id: 4,
     title: "Histórias de amor merecem ser contadas",
-    image: "/imagens/banner/banner4.jpg",
+    image: ImgBanner4,
   },
   {
     id: 5,
     title: "Momentos únicos, memórias eternas",
-    image: "/imagens/banner/banner5.jpg",
+    image: ImgBanner5,
   },
   {
     id: 6,
     title: "Seu casamento dos sonhos realizado",
-    image: "/imagens/banner/banner6.jpg",
+    image: ImgBanner6,
   },
 ];
 
@@ -117,6 +125,7 @@ const Banner = () => {
                 src={slide.image}
                 alt={slide.title}
                 className="w-full h-full object-cover object-top"
+                fill
               />
             </div>
           ))}
