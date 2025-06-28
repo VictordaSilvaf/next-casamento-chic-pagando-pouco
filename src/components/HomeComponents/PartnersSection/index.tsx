@@ -33,7 +33,7 @@ const PartnersSection = () => {
       setEmail("");
       setPhone("");
       setMessage("");
-      
+
 
     } catch (error) {
       console.log(error);
@@ -142,8 +142,8 @@ const PartnersSection = () => {
                       Nos conte um pouco do seu sonho
                     </label>
                     <textarea
-                      id="message"
-                      name="message"
+                      id="content"
+                      name="content"
                       rows={4}
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}

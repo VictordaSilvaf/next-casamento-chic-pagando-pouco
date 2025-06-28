@@ -1,23 +1,29 @@
+// src/app/success/page.tsx
 
 import { CheckCircle } from 'lucide-react'
 import { redirect } from 'next/navigation'
 import { stripe } from '@/lib/stripe';
 import Redirect from "./redirect";
 
-export default async function SuccessPage({ searchParams }: { readonly searchParams: { readonly session_id: string } }) {
-    const { session_id } = searchParams
-    if (!session_id)
-        throw new Error('Please provide a valid session_id (`cs_test_...`)')
+interface PageProps {
+    searchParams: Record<string, string | string[] | undefined>;
+}
 
-    const {
-        status,
-    } = await stripe.checkout.sessions.retrieve(session_id, {
+export default async function SuccessPage({ searchParams }: PageProps) {
+    const session_id = typeof searchParams.session_id === 'string' ? searchParams.session_id : undefined;
+
+    if (!session_id) {
+        throw new Error('Please provide a valid session_id (`cs_test_...`)');
+    }
+
+    const { status } = await stripe.checkout.sessions.retrieve(session_id, {
         expand: ['line_items', 'payment_intent']
-    })
+    });
 
     if (status === 'open') {
-        return redirect('/')
+        redirect('/');
     }
+
     return (
         <div className="min-h-screen w-full flex flex-col items-center justify-center bg-gray-50">
             <div className="flex flex-col items-center justify-center gap-6 max-w-[590px] mx-auto text-center px-6">
@@ -40,5 +46,5 @@ export default async function SuccessPage({ searchParams }: { readonly searchPar
                 </div>
             </div>
         </div>
-    )
+    );
 }
